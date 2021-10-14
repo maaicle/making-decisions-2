@@ -134,7 +134,7 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 //Code Here
 for (let i = 0; i < listOfNumbers.length; i++) {
   if(listOfNumbers[i] % 3 === 0) {
-    console.log(`${listOfNumbers[i]} is divisible by 3.`)
+    // console.log(`${listOfNumbers[i]} is divisible by 3.`)
   }
 }
 
@@ -148,14 +148,17 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+for (let i = letters.length - 1; i >= 0; i--) {
+  // console.log(letters[i])
+}
 
 ////////// Advanced Problems //////////
 
 ////////// PROBLEM 10 //////////
-// Switch statements can be excellent alternatives to if blocks. Look up switch statements (I recommend W3 Schools) and try to implement one for the following.
-
-// Do not edit the code below.
+/* Switch statements can be excellent alternatives to if blocks. 
+Look up switch statements (I recommend W3 Schools) and try to implement one for the following.
+Do not edit the code below.
+*/
 let letterGrade = 'B'
 // Do not edit the code above.
 
@@ -170,7 +173,23 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
-
+switch(letterGrade) {
+  case 'A':
+    console.log('The student is doing excellently.')
+    break;
+  case 'B':
+    console.log('The student is doing well.')
+    break;
+  case 'C':
+    console.log('The student is doing alright.')
+    break;
+  case 'D':
+    console.log('The student is not doing very well.')
+    break;
+  case 'F':
+    console.log('The student is failing.')
+    break;  
+};
 
 
 ////////// PROBLEM 11 //////////
